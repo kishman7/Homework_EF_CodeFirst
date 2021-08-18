@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,9 +56,17 @@
   <ItemGroup>
     <Compile Include="ApplicationContex.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="Migrations\202108141211277_initDataBase.cs" />
-    <Compile Include="Migrations\202108141211277_initDataBase.Designer.cs">
-      <DependentUpon>202108141211277_initDataBase.cs</DependentUpon>
+    <Compile Include="Migrations\202108161756335_initDatabase.cs" />
+    <Compile Include="Migrations\202108161756335_initDatabase.Designer.cs">
+      <DependentUpon>202108161756335_initDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108182046316_initBuyCopyNumber.cs" />
+    <Compile Include="Migrations\202108182046316_initBuyCopyNumber.Designer.cs">
+      <DependentUpon>202108182046316_initBuyCopyNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108182100020_GameModePlayer.cs" />
+    <Compile Include="Migrations\202108182100020_GameModePlayer.Designer.cs">
+      <DependentUpon>202108182100020_GameModePlayer.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -67,8 +77,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202108141211277_initDataBase.resx">
-      <DependentUpon>202108141211277_initDataBase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202108161756335_initDatabase.resx">
+      <DependentUpon>202108161756335_initDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108182046316_initBuyCopyNumber.resx">
+      <DependentUpon>202108182046316_initBuyCopyNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108182100020_GameModePlayer.resx">
+      <DependentUpon>202108182100020_GameModePlayer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

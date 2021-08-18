@@ -3,7 +3,7 @@ namespace Homework_EF_CodeFirst.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initDataBase : DbMigration
+    public partial class initDatabase : DbMigration
     {
         public override void Up()
         {

@@ -7,13 +7,13 @@ namespace Homework_EF_CodeFirst.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class initDataBase : IMigrationMetadata
+    public sealed partial class GameModePlayer : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initDataBase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(GameModePlayer));
         
         string IMigrationMetadata.Id
         {
-            get { return "202108141211277_initDataBase"; }
+            get { return "202108182100020_GameModePlayer"; }
         }
         
         string IMigrationMetadata.Source
